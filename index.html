@@ -19,84 +19,92 @@
   </head>
   <body>
       <div id="popup-container__callback">
-          <form class="popup" action="#">
+          <form class="popup">
+              <input type="hidden" name="project_name" value="Тест">
+              <input type="hidden" name="admin_email" value="oleg.fedoruk91@gmail.com">
+              <input type="hidden" name="form_subject" value="Тема письма">
               <label for="popup-form__phone">Оставьте мне свой номер телефона и я перезвоню Вам в ближайшее время</label>
-              <input id=popup-form__phone class="popup-form__phone" type="email" placeholder="Введите Ваш номер телефона">
-              <input class="popup-form__name" type="text" placeholder="Введите Ваше имя">
-              <input class="popup-submit" type="button" value="Отправить!">
+              <input id="popup-form__phone" class="popup-form__phone" type="tel" name="Телефон" placeholder="+7 (___) ___-__-__">
+              <input class="popup-form__name" type="text" name="Имя" placeholder="Введите Ваше имя">
+              <button class="popup-submit" type="submit">Отправить!</button>
           </form>
         </div>
         <div id="popup-container__getinfo">
-            <form class="popup" action="#">
+            <form class="popup">
+                <input type="hidden" name="project_name" value="Тест">
+                <input type="hidden" name="admin_email" value="oleg.fedoruk91@gmail.com">
+                <input type="hidden" name="form_subject" value="Тема письма">
                 <label for="popup-form__phone">Оставьте свои контакты для получения более подробной информации</label>
-                <input class="popup-form__name" type="text" placeholder="Введите Ваше имя">
-                <input class="popup-form__phone" type="email" placeholder="Введите Ваш e-mail">
-                <input class="popup-form__phone" type="email" placeholder="Введите Ваш номер телефона">
-                <input class="popup-submit" type="button" value="Отправить!">
+                <input class="popup-form__phone" type="tel" name="Телефон"placeholder="+7 (___) ___-__-__">
+                <input class="popup-form__name" type="text" name="Имя" placeholder="Введите Ваше имя">
+                <!-- <input class="popup-form__phone" type="email" name="Почта" placeholder="Введите Ваш e-mail"> -->
+                <button class="popup-submit" type="submit">Отправить!</button>
             </form>
           </div>
           <button class="btn_top" title="Наверх!"><img src="img/arrow.png" alt="Стрелка вверх" class="arrow"></button>
-    <header>
+
+    <header class="header">
       <nav class="fixed-container flex-container" id="nav-bar">
-        <button id="mobile-menu" class="mobile-menu" type="button"><i class="fas fa-bars"></i></button>
-        <ul id="header-nav">
+        <button class="mobile-menu" type="button"><i class="fas fa-bars" id="icon"></i></button>
+        <ul class="header-nav mobile-header-nav">
           <li><a href="#second-page">Услуги</a></li>
           <li><a href="#slider">Портфолио</a></li>
           <li><a href="#third-page">Стоимость</a></li>
         </ul>
-        <address id ="phone-box" style="font-style: normal">
-            <a id="phone-num" href="tel:+74959955555">+7 (495) 995-55-77</a>
+        <div class="phone-box">
+            <a class="phone-num" href="tel:+74959955555">+7 (495) 995-55-77</a>
             <button type="button" class="phone-button"><span>Заказать звонок</span><i class="fas fa-phone-alt"></i></button>
-        </address>
-      </nav>
-      <ul id="mobile-header-nav">
-        <li><a href="#second-page">Услуги</a></li>
-        <li><a href="#slider">Портфолио</a></li>
-        <li><a href="#third-page">Стоимость</a></li>
-      </ul>
-    </header>
-    <section class="flex-container first-page">
-      <div class="first-page__centr-cont fixed-container">
-        <div id="desktop-box" class="box">
-          <h1 class="name-title">Олег Федорук</h1>
-          <p>Front-end-разработчик и веб-верстальщик</p>
-          <input class="standart-button" type="button" value="Узнать больше">
         </div>
-        <div class="fst-page__flying-element flying-element__first">{&NonBreakingSpace;}</div>
-        <div class="fst-page__flying-element flying-element__second">&lt; / &gt;</div>
-        <div class="fst-page__flying-element flying-element__third">#</div>
-        <div class="fst-page__flying-element flying-element__fourth">&lt; div &gt;</div>
-        <div class="fst-page__flying-element flying-element__fifth">&lt; div &gt;</div>
-        <img id="photo-author" src="img/dude3.png" alt="Фото специалиста">
+      </nav>
+    </header>
+
+    <section class="flex-container first-page">
+      <div class="first-page__centr-cont">
+        <div class="box desktop-box">
+          <h1 class="name-title">Дмитрий Алексеев</h1>
+          <p>Front-end-разработчик и веб-верстальщик</p>
+          <button class="standart-button" type="button">Узнать больше</button>
+        </div>
+        <span class="fst-page__flying-element flying-element__first">{&NonBreakingSpace;}</span>
+        <span class="fst-page__flying-element flying-element__second">&lt; / &gt;</span>
+        <span class="fst-page__flying-element flying-element__third">#</span>
+        <span class="fst-page__flying-element flying-element__fourth">&lt; div &gt;</span>
+        <span class="fst-page__flying-element flying-element__fifth">&lt; div &gt;</span>
+        <img class="photo-author" src="img/dude1.png" alt="Фото специалиста">      
       </div>
     </section>
-    <div id="mobile-box" class="box">
-      <h2 class="name-title">Олег Федорук</h2>
+
+    <div class="box mobile-box">
+      <h2 class="name-title">Дмитрий Алексеев</h2>
       <p>Front-end-разработчик и веб-верстальщик</p>
-        <input class="standart-button" type="button" value="Узнать больше">
-    </div>   
-    <section id="second-page" class="fixed-container flex-container">
-      <h2 class="headline">Что я делаю</h2>
-      <ul class="second-page__elements">
-        <li class="second-page__element">
-          <img src="img/tools-and-utensils.png" alt="Иконка монитора">
-          <p class="element-title">Вёрстка лендинг-страниц и сайтов любой сложности</p>
-        </li>
-        <li class="second-page__element">
-          <img src="img/responsive.png " alt="Иконка разных устройств">
-          <p class="element-title">Адаптивная вёрстка под все браузеры и устройства</p>
-        </li>
-        <li class="second-page__element">
-          <img src="img/programming.png" alt="Иконка программирования">
-          <p class="element-title">Frontend-разработка и программирование</p>
-        </li>
-        <li class="second-page__element">
-          <img src="img/coding.png" alt="Иконка код">
-          <p class="element-title">Исправление и доработка существующей вёрстки</p>
-        </li>
-      </ul>
-      <input type="button" class="standart-button" value="Узнать стоимость">
+        <button class="standart-button" type="button">Узнать больше</button>
+    </div>  
+
+    <section id="second-page" class="second-page">
+      <div class="second-page__container  flex-container">
+        <h2 class="headline">Что я делаю</h2>
+        <ul class="second-page__elements">
+          <li class="second-page__element">
+            <img src="img/tools-and-utensils.png" alt="Иконка монитора">
+            <p class="element-title">Вёрстка лендинг-страниц и&nbsp;сайтов&nbsp;любой сложности</p>
+          </li>
+          <li class="second-page__element">
+            <img src="img/responsive.png " alt="Иконка разных устройств">
+            <p class="element-title">Адаптивная вёрстка под все браузеры и устройства</p>
+          </li>
+          <li class="second-page__element">
+            <img src="img/programming.png" alt="Иконка программирования">
+            <p class="element-title">Frontend-разработка и программирование</p>
+          </li>
+          <li class="second-page__element">
+            <img src="img/coding.png" alt="Иконка код">
+            <p class="element-title">Исправление и доработка существующей вёрстки</p>
+          </li>
+        </ul>
+        <button type="button" class="standart-button">Узнать стоимость</button>
+      </div>
     </section>
+
     <section  id="slider">
       <div class="fixed-container flex-container">
         <h2 class="headline">Примеры моих работ</h2>
@@ -105,7 +113,7 @@
                 <img src="img/exmp_4.jpg" alt="Пример сайта 1">
                 <p class="element-title">Сайт новостного агентства</p>
               </a>
-              <a id="slide__fst-elem" class="slider__element" href="#">
+              <a class="slider__element" href="#">
                 <img src="img/exmp_1.jpg" alt="Пример сайта 4">
                 <p class="element-title">Сайт психолога Веры Антоновой</p>
               </a>
@@ -113,39 +121,45 @@
                 <img src="img/exmp_2.jpg" alt="Пример сайта 2">
                 <p class="element-title">Сайт визового центра</p>
               </a> 
-              <a id="slide__trd-elem" class="slider__element" href="#">
+              <a class="slider__element" href="http://developer.mcdir.ru/" target="_blank">
                 <img src="img/exmp_3.jpg" alt="Пример сайта 3">
                 <p class="element-title">Сайт для бронирования поездок</p>
               </a>                       
         </div>
-        <input type="button" class="standart-button" value="Заказать проект">
+        <button type="button" class="standart-button">Заказать проект</button>
       </div>
     </section>
-    <div id="third-page" class="third-page">
+
+    <section id="third-page" class="third-page">
+      <div class="fixed-container">
         <div class="trd-page__fly_elem fly_elem__first">{&NonBreakingSpace;}</div>
         <div class="trd-page__fly_elem fly_elem__sec">&lt;div&gt;</div>
-      <div class="trd-page__wrapper">
-        <p class="price-text">Адаптивная вёрстка под все устройства и браузеры от 1000 рублей всего за 4 часа.*</p>
-        <p class="feature">*Срок и стоимость могут отличаться от заявленных и рассчитываются индивидуально, в зависимости от сложности задач</p>
+        <div class="trd-page__wrapper">
+          <h2 class="price-text">Адаптивная вёрстка под все устройства и&NonBreakingSpace;браузеры от 1000 рублей всего за 4 часа.*</h2>
+          <p class="feature">*Срок и стоимость могут отличаться от заявленных и рассчитываются индивидуально, в зависимости от сложности задач</p>
+        </div>
+        <div class="trd-page__fly_elem fly_elem__third">#</div>
+        <div class="trd-page__fly_elem fly_elem__four">&lt; / &gt;</div>
+        <div class="trd-page__fly_elem fly_elem__fifth">{&NonBreakingSpace;}</div>
       </div>
-      <div class="trd-page__fly_elem fly_elem__third">#</div>
-      <div class="trd-page__fly_elem fly_elem__four">&lt; / &gt;</div>
-      <div class="trd-page__fly_elem fly_elem__fifth">&lt;/div&gt;</div>
-    </div>
-    <footer id="footer" class="fixed-container flex-container">
-      <div class="footer__wrapper flex-container">
-        <ul id="footer-nav">  
-          <li><a href="#second-page">Услуги</a></li>
-          <li><a href="#slider">Портфолио</a></li>
-          <li><a href="#third-page">Стоимость</a></li>
+    </section>
+
+    <footer class="footer ">
+      <div class="footer__wrapper flex-container fixed-container">
+        <nav class="footer-nav">
+          <ul>  
+            <li><a href="#second-page">Услуги</a></li>
+            <li><a href="#slider">Портфолио</a></li>
+            <li><a href="#third-page">Стоимость</a></li>
           </ul>
-          <address id ="contacts" style="font-style: normal">
-              <a id="footer-phone" href="tel:+74959955555"><i class="fas fa-phone-alt"></i>&emsp;+7 (495) 995-55-77</a>
-              <a id="mail" href="mailto:oleg.vl.fedoruk@gmail.com"><i class="fas fa-envelope"></i>&emsp;oleg.fedoruk@gmail.com</a>
+        </nav>
+          <address class="contacts">
+              <a class="footer-phone" href="tel:+74959955555"><i class="fas fa-phone-alt"></i>&emsp;+7 (495) 995-55-77</a>
+              <a class="mail" href="mailto:oleg.vl.fedoruk@gmail.com"><i class="fas fa-envelope"></i>&emsp;dmitry@alekseev.com</a>
             </address>
-            <div id="contact-items">
+            <div class="contact-items">
               <input type="button" value="Заказать звонок" class="phone-button">
-              <ul id="socials">
+              <ul class="socials">
                 <li><a href="https://vk.com" class="icon icon_vk"></a></li>
                 <li><a href="https://www.facebook.com" class="icon icon_fb"></a></li>
                 <li><a href="https://twitter.com" class="icon icon_tw"></a></li>
@@ -154,11 +168,16 @@
             </div>
       </div>
     </footer>
+
     <div class="flex-container copyright">
-      &#169; Федорук Олег 2019 г.
+      &#169; Дмитрий Алексеев 2019 г.
     </div>
+
     <script src="libs/jquery/jquery-3.4.1.min.js"></script>
     <script src="libs/slick/slick.min.js"></script>
+    <script src="libs/jquery.inputmask.min.js"></script>
+	  <script src="libs/jquery.formstyler.min.js"></script>
+	  <script src="libs/jquery.validate.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

@@ -1,6 +1,26 @@
+@media (max-width: 1730px) {
+
+  .fly_elem__first {
+    display: none;
+  }
+
+  .fly_elem__four {
+    display: none;
+  }
+
+  .fly_elem__fifth {
+    display: none;
+  }
+
+  .fly_elem__sec {
+    display: none;
+  }
+
+}
+
 @media (max-width: 1024px) {
 
-#header-nav {
+.header-nav {
   display: none;
 }
 
@@ -8,7 +28,7 @@
   display: block;
 }
 
-#mobile-header-nav a {
+.mobile-header-nav a {
   display: block;
 }
  
@@ -42,19 +62,10 @@
   height: auto;
 }
 
-p {
+.second-page p {
   max-width: 290px;
   margin: 40px auto 0;
 }
-/* 
-#left-control {
-  display: none;
-}
-
-#right-control {
-  display: none;
-} */
-
 
 .slider__element {
   width: 280px;
@@ -69,7 +80,7 @@ p {
   max-width: none;
 }
 
-#contact-items {
+.contact-items {
   margin: 20px 40px 0 0;
 }
 
@@ -124,7 +135,7 @@ p {
   font-size: 35px;
 } */
 
-#footer-nav {
+.footer-nav {
   margin-left: 20px;
 }
 
@@ -136,38 +147,76 @@ p {
 
 @media (max-width: 768px) {
 
-  #phone-box .phone-button span  {
+  .mobile-header-nav {
+    display: none;
+    list-style: none;
+    position: fixed;
+    width: 100%;
+    height: 1vh;
+    left: 0;
+    top: 70px;
+    text-align: center;
+  }
+  
+  .mobile-header-nav li {
+    display: block;
+    padding: 0;
+    background-image: url(/img/fon.png);
+  }
+  
+  .mobile-header-nav a {
+    font-size: 25px;
+    font-weight: 700;
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+  }
+
+  .phone-box .phone-button span  {
     display: none;
   }
 
-  #phone-box .phone-button {
+  .phone-box .phone-button {
     border: 0;
     padding: 0;
+    background-color: transparent;
+    width: 20px;
   }
 
-  #phone-box .fa-phone-alt {
+  .phone-box .fa-phone-alt {
     font-size: 20px;
     border: 2px solid #ff5e79;
     cursor: pointer;
-    background-color: white;
-    font-size: 20px;
+    background-color: transparent;
+    font-size: 15px;
     padding: 10px 11px;
     border-radius: 200px;
     outline: none;
   }
 
-   #desktop-box {
+  .phone-box {
+    margin-right: 30px;
+  }
+
+  .phone-button:hover {  
+    background-color: transparent;
+    color: transparent;
+    transition: color 0.15s;
+    transition: background-color 0.15s;
+  }
+
+   .desktop-box {
      display: none;
    }
 
-   #mobile-box {
+   .mobile-box {
      display: flex;
      align-items: center;
      text-align: center;
      margin-top: 20px;
    }
 
-   #photo-author {
+   .photo-author {
     width: 100%;
     height: auto;
     align-self: center;
@@ -183,6 +232,10 @@ p {
     background-size: contain;
   }
 
+  .name-title {
+    margin-top: 20px;
+  }
+
   .second-page__element {
     width: 100%;
     margin-top: 85px;
@@ -191,6 +244,7 @@ p {
   .headline {
     font-size: 30px;
     align-self: center;
+    text-align: center;
   }
 
   .price-text {
@@ -210,11 +264,11 @@ p {
       justify-content: flex-start;
     }
 
-    #footer-nav {
+    .footer-nav {
       padding: 0;
     }
 
-    #contact-items {
+    .contact-items {
       margin: 40px 20px;
     }
 
@@ -259,10 +313,14 @@ p {
 
 @media (max-width: 414px) {
 
-  #mobile-header-nav a {
+  .mobile-header-nav a {
     font-size: 14px;
   }
 
+  .slider__element img {
+    width: 100%;
+    height: auto;
+  }
 
   .first-page {
     background-image: url(img/stain.svg);
@@ -271,11 +329,12 @@ p {
     background-size: contain;
   }
 
-  #phone-num {
+  .phone-num {
     font-size: 18px;
   }
+
 .fas {
-  font-size: 30px
+  font-size: 30px;
 }
 
 .fa-envelope {
@@ -311,20 +370,22 @@ p {
   margin: 0;
 }
 
-#footer-phone {
+.footer-phone {
   font-size: 20px;
 }
 
-#mail {
+.mail {
   font-size: 20px;
 }
 
-#footer-nav {
+.footer-nav {
   align-self: baseline;
   padding-left: 20px;
 }
 
-#contact-items {
+.contact-items {
   margin: 20px 0 0 20px;
 }
+
+
 }
